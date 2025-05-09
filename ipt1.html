@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link rel="stylesheet" href="ipt1.css" />
+</head>
+<body>
+  <section class="about-section">
+    <div class="about-container">
+      
+      <!-- About Text Column -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am Rhea Mae M. Tahanlangit, a dedicated and driven 2nd-year Bachelor of Science in Information Technology (BSIT) student at Holy Name University.</p>
+        <p>Currently serving as an assistant officer of the Society of Young Computer Professionals (SYCP), I actively participate in organizing events that foster growth in tech skills and leadership among students.</p>
+        <p>My passion lies in web development, problem-solving, and staying updated with the latest trends in technology. I enjoy working on hands-on projects that challenge my creativity and logic.</p>
+        <p>In the future, I aspire to become a full-stack developer or a UX/UI designer who contributes to meaningful and accessible digital solutions.</p>
+      </div>
+
+      <!-- Image Gallery Column -->
+      <div class="gallery">
+        <div class="main-image">
+          <img id="current" src="img1.jpg" alt="Main Display Image" />
+          <button class="nav-arrow left" onclick="changeImage(-1)">&#10094;</button>
+          <button class="nav-arrow right" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <div class="thumbnails">
+          <img src="img1.jpg" alt="Thumb 1" onclick="setImage(this)" />
+          <img src="img2.jpg" alt="Thumb 2" onclick="setImage(this)" />
+          <img src="img3.jpeg" alt="Thumb 3" onclick="setImage(this)" />
+          <img src="img4.jpeg" alt="Thumb 4" onclick="setImage(this)" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="ipt1.js"></script>
+  <a href="javascript:history.back()" class="back-button">← Back</a>
+
+</body>
+</html>

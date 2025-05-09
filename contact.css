@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+  background-color: #ffe3f0; /* Light pink background */
+}
+
+.contact-section {
+  padding: 4rem 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 320px; /* Ensure columns are not too narrow */
+  max-width: 600px; /* Set a max-width to prevent too wide columns */
+}
+
+.contact-left h2,
+.contact-right h2 {
+  font-size: 2.5rem;
+  color: #e647c4;
+  margin-bottom: 1rem;
+}
+
+.contact-left p,
+.contact-info p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-info {
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.8rem 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 1rem;
+  background-color: #e647c4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d036af;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack the columns on smaller screens */
+    gap: 1rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    max-width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+  }
+
+  .contact-form button {
+    padding: 0.8rem;
+  }
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #e647c4; /* Pink background */
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #d036af; /* Darker pink on hover */
+}
